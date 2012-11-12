@@ -1,0 +1,9 @@
+#!/bin/csh -f
+
+mkdir -p "parsed_data/$1/source"
+touch    "parsed_data/$1/source/$1"
+$EDITOR  "parsed_data/$1/source/$1"
+
+python pyParser/parser.py -v --dataset "$1"
+
+echo 'fini.'

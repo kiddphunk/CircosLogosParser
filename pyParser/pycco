@@ -1,0 +1,7 @@
+#!/usr/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'Pycco==0.2.0','console_scripts','pycco'
+__requires__ = 'Pycco==0.2.0'
+import sys
+from pkg_resources import load_entry_point
+
+load_entry_point('Pycco==0.2.0', 'console_scripts', 'pycco')()
